@@ -1,0 +1,135 @@
+.cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #1a365d, #2b6cb0);
+    color: white;
+  }
+  
+  .cta-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .cta-pasos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .paso-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .paso-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .paso-icono {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .paso-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paso-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+  }
+  
+  .paso-flecha {
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+  }
+  
+  .cta-accion {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .cta-boton {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #f6e05e;
+    color: #1a365d;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #faf089;
+  }
+  
+  .cta-nota {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media (max-width: 1024px) {
+    .cta-pasos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .paso-flecha {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .cta-pasos {
+      grid-template-columns: 1fr;
+    }
+  
+    .paso-card {
+      padding: 1.5rem;
+    }
+  
+    .paso-icono {
+      width: 60px;
+      height: 60px;
+      font-size: 2rem;
+    }
+  
+    .cta-boton {
+      width: 100%;
+      padding: 1rem;
+    }
+  }

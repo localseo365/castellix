@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://castellix.vercel.app/sitemap.xml

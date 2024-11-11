@@ -1,0 +1,58 @@
+.whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; /* Ajustamos la posición base */
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 999; /* Por debajo del banner de cookies */
+  }
+  
+  /* Ajustamos la posición cuando el banner de cookies está visible */
+  .cookie-banner-visible .whatsapp-button {
+    bottom: 100px; /* O el alto que necesites según el banner de cookies */
+  }
+  
+  .whatsapp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #22c15e;
+  }
+  
+  .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .whatsapp-icon svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .whatsapp-text {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      padding: 10px 16px;
+    }
+    
+    .whatsapp-icon {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .whatsapp-text {
+      font-size: 0.8rem;
+    }
+  }
